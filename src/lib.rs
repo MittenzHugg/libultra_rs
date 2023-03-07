@@ -310,7 +310,7 @@ impl From<u64> for F3dex {
                     fmt: G_IM_FMT::try_from(_SHIFTR(w, 0x35, 3)).unwrap(), 
                     siz: G_IM_SIZ::try_from(_SHIFTR(w, 0x33, 2)).unwrap(), 
                     line: _SHIFTR(w, 0x29, 9), 
-                    tmem: _SHIFTR(w, 0x29, 9), 
+                    tmem: _SHIFTR(w, 0x20, 9), 
                     tile: _SHIFTR(w, 24, 3),
                     palette: _SHIFTR(w, 20, 4),
                     cmt: _SHIFTR(w, 18, 2), maskt: _SHIFTR(w, 14, 4), shiftt: _SHIFTR(w, 10, 4), 
